@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "password-generator",
+    "title": "Password Generator",
+    "description": "Generate strong, secure random passwords instantly. Customize length, include symbols, numbers, and uppercase letters.",
+    "shortDescription": "Create strong, random passwords in one click.",
+    "category": "Security",
+    "keywords": ["password generator", "random password", "secure password", "strong password maker", "password creator online"],
+    "icon": "🔐",
+    "faqItems": [
+      {
+        "question": "How secure are the generated passwords?",
+        "answer": "Passwords are generated entirely in your browser using the Web Crypto API. They are never sent to any server, making them extremely secure."
+      },
+      {
+        "question": "What is a strong password?",
+        "answer": "A strong password is at least 16 characters long and includes a mix of uppercase letters, lowercase letters, numbers, and special symbols."
+      },
+      {
+        "question": "How often should I change my password?",
+        "answer": "Security experts recommend changing passwords every 3-6 months, or immediately if you suspect a breach."
+      }
+    ]
+  },
+  {
+    "slug": "word-counter",
+    "title": "Word Counter",
+    "description": "Count words, characters, sentences, and paragraphs in your text. Get reading time estimates and keyword density instantly.",
+    "shortDescription": "Count words, characters, and reading time in seconds.",
+    "category": "Writing",
+    "keywords": ["word counter", "character counter", "word count checker", "text word counter online", "count words in text"],
+    "icon": "📝",
+    "faqItems": [
+      {
+        "question": "Does this tool save my text?",
+        "answer": "No. All processing happens locally in your browser. Your text is never sent to any server."
+      },
+      {
+        "question": "How is reading time calculated?",
+        "answer": "Reading time is calculated based on an average reading speed of 200 words per minute."
+      },
+      {
+        "question": "What counts as a word?",
+        "answer": "Any sequence of characters separated by spaces or punctuation counts as one word."
+      }
+    ]
+  },
+  {
+    "slug": "color-palette-generator",
+    "title": "Color Palette Generator",
+    "description": "Generate beautiful, harmonious color palettes for your design projects. Create complementary, triadic, or analogous color schemes instantly.",
+    "shortDescription": "Generate stunning color palettes for your designs.",
+    "category": "Design",
+    "keywords": ["color palette generator", "color scheme generator", "random color palette", "color picker online", "design color palette"],
+    "icon": "🎨",
+    "faqItems": [
+      {
+        "question": "What color formats are supported?",
+        "answer": "Palettes are displayed in HEX, RGB, and HSL formats. Click any value to copy it to your clipboard."
+      },
+      {
+        "question": "What is a complementary color scheme?",
+        "answer": "Complementary colors are opposite each other on the color wheel, creating high contrast and vibrant combinations."
+      },
+      {
+        "question": "Can I export the palette?",
+        "answer": "Yes, you can copy individual HEX codes or copy the entire palette as a JSON array."
+      }
+    ]
+  },
+  {
+    "slug": "pomodoro-timer",
+    "title": "Pomodoro Timer",
+    "description": "Boost your productivity with the Pomodoro Technique. Customize work sessions, short breaks, and long breaks to maximize your focus.",
+    "shortDescription": "Stay focused with a customizable Pomodoro timer.",
+    "category": "Productivity",
+    "keywords": ["pomodoro timer", "pomodoro technique", "focus timer", "productivity timer online", "work break timer"],
+    "icon": "🍅",
+    "faqItems": [
+      {
+        "question": "What is the Pomodoro Technique?",
+        "answer": "The Pomodoro Technique is a time management method that uses 25-minute focused work sessions separated by short breaks to improve productivity."
+      },
+      {
+        "question": "Can I customize the timer durations?",
+        "answer": "Yes. You can set custom durations for work sessions (default 25 min), short breaks (5 min), and long breaks (15 min)."
+      },
+      {
+        "question": "Will the timer notify me when a session ends?",
+        "answer": "Yes. The timer plays a sound notification and shows a browser notification when each session ends."
+      }
+    ]
+  },
+  {
+    "slug": "readability-checker",
+    "title": "Readability Checker",
+    "description": "Analyze your text's readability with Flesch-Kincaid, Gunning Fog, and SMOG scores. Improve your writing clarity and reach a wider audience.",
+    "shortDescription": "Measure how easy your text is to read.",
+    "category": "Writing",
+    "keywords": ["readability checker", "readability score", "Flesch Kincaid score", "text readability analyzer", "readability test online"],
+    "icon": "📊",
+    "faqItems": [
+      {
+        "question": "What is a Flesch Reading Ease score?",
+        "answer": "Flesch Reading Ease scores range from 0-100. Scores above 60 are considered easy to read, suitable for general audiences. Below 30 is considered very difficult."
+      },
+      {
+        "question": "What grade level should my content target?",
+        "answer": "For web content targeting a general audience, aim for a 7th-8th grade reading level (Flesch-Kincaid Grade Level 7-8)."
+      },
+      {
+        "question": "What is a Gunning Fog Index?",
+        "answer": "The Gunning Fog Index estimates the years of education needed to understand the text. A score of 12 means a high school graduate can understand it."
+      }
+    ]
+  },
+  {
+    "slug": "uuid-generator",
+    "title": "UUID Generator",
+    "description": "Generate random UUIDs (v4) and ULIDs instantly. Bulk generate multiple unique identifiers for development and testing.",
+    "shortDescription": "Generate unique IDs for your projects instantly.",
+    "category": "Developer",
+    "keywords": ["UUID generator", "GUID generator", "random UUID", "UUID v4 online", "unique ID generator"],
+    "icon": "🔑",
+    "faqItems": [
+      {
+        "question": "What is a UUID?",
+        "answer": "A UUID (Universally Unique Identifier) is a 128-bit label used to uniquely identify objects in software systems. UUID v4 is randomly generated."
+      },
+      {
+        "question": "Are generated UUIDs truly unique?",
+        "answer": "UUID v4 has 2^122 possible values, making collisions astronomically unlikely. They are safe to use as unique identifiers."
+      },
+      {
+        "question": "What is the difference between UUID and ULID?",
+        "answer": "ULIDs are lexicographically sortable and contain a timestamp component, making them useful for database records where ordering by creation time matters."
+      }
+    ]
+  },
+  {
+    "slug": "base64-encoder",
+    "title": "Base64 Encoder / Decoder",
+    "description": "Encode and decode text and files to/from Base64 format instantly. Essential for web development, API testing, and data encoding tasks.",
+    "shortDescription": "Encode and decode Base64 strings in your browser.",
+    "category": "Developer",
+    "keywords": ["base64 encoder", "base64 decoder", "base64 online", "encode base64", "decode base64 string"],
+    "icon": "🔄",
+    "faqItems": [
+      {
+        "question": "What is Base64 encoding?",
+        "answer": "Base64 is a binary-to-text encoding scheme that represents binary data using 64 ASCII characters. It is commonly used to embed images in HTML and transmit data over text-based protocols."
+      },
+      {
+        "question": "Is Base64 a form of encryption?",
+        "answer": "No. Base64 is encoding, not encryption. It can be easily decoded by anyone. Never use it to secure sensitive data."
+      },
+      {
+        "question": "Can I encode binary files?",
+        "answer": "Yes. You can upload any file and this tool will output its Base64 encoded string, which you can use in CSS data URLs or HTML img tags."
+      }
+    ]
+  },
+  {
+    "slug": "json-formatter",
+    "title": "JSON Formatter & Validator",
+    "description": "Format, beautify, and validate JSON data online. Minify JSON for production or pretty-print it for debugging. Instant syntax error detection.",
+    "shortDescription": "Format and validate JSON data instantly.",
+    "category": "Developer",
+    "keywords": ["JSON formatter", "JSON validator", "JSON beautifier", "JSON pretty print", "format JSON online"],
+    "icon": "📋",
+    "faqItems": [
+      {
+        "question": "What does JSON formatting do?",
+        "answer": "JSON formatting adds proper indentation and line breaks to minified JSON, making it human-readable. It is the reverse of JSON minification."
+      },
+      {
+        "question": "Can this tool fix invalid JSON?",
+        "answer": "The tool detects and highlights syntax errors, but cannot automatically fix them. It will tell you the exact line and character where the error occurs."
+      },
+      {
+        "question": "Is my JSON data safe?",
+        "answer": "Yes. All formatting happens locally in your browser. Your JSON data is never sent to our servers."
+      }
+    ]
+  },
+  {
+    "slug": "markdown-preview",
+    "title": "Markdown Preview",
+    "description": "Write Markdown and see a live HTML preview instantly. Supports GitHub Flavored Markdown including tables, code blocks, and task lists.",
+    "shortDescription": "Live Markdown editor with instant HTML preview.",
+    "category": "Writing",
+    "keywords": ["markdown preview", "markdown editor online", "markdown to HTML", "live markdown preview", "GFM markdown editor"],
+    "icon": "✍️",
+    "faqItems": [
+      {
+        "question": "What Markdown features are supported?",
+        "answer": "Supports GitHub Flavored Markdown including headings, bold, italic, links, images, code blocks with syntax highlighting, tables, and task lists."
+      },
+      {
+        "question": "Can I export the HTML output?",
+        "answer": "Yes. Click the 'Copy HTML' button to copy the rendered HTML to your clipboard, ready to paste into your project."
+      },
+      {
+        "question": "Does this save my content?",
+        "answer": "Your content is saved to your browser's local storage automatically, so it persists between sessions. Nothing is sent to any server."
+      }
+    ]
+  },
+  {
+    "slug": "css-gradient-generator",
+    "title": "CSS Gradient Generator",
+    "description": "Create beautiful CSS linear and radial gradients visually. Copy production-ready CSS code instantly for your web projects.",
+    "shortDescription": "Create and copy CSS gradients in seconds.",
+    "category": "Design",
+    "keywords": ["CSS gradient generator", "linear gradient CSS", "radial gradient generator", "CSS background gradient", "gradient maker online"],
+    "icon": "🌈",
+    "faqItems": [
+      {
+        "question": "What types of gradients can I create?",
+        "answer": "You can create linear gradients (straight lines at any angle) and radial gradients (circular or elliptical from a center point)."
+      },
+      {
+        "question": "Is the generated CSS cross-browser compatible?",
+        "answer": "Yes. The generated CSS includes standard syntax that works in all modern browsers (Chrome, Firefox, Safari, Edge)."
+      },
+      {
+        "question": "Can I add more than two colors?",
+        "answer": "Yes. You can add unlimited color stops to create complex multi-color gradients."
+      }
+    ]
+  }
+]

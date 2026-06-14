@@ -1,0 +1,29 @@
+name: Weekly SEO Report
+
+on:
+  schedule:
+    # Every Monday at 08:00 UTC+8 (00:00 UTC)
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  seo-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run SEO Report
+        run: npx tsx scripts/seo-report.ts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
