@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import toolsData from "@/data/tools.json";
 
@@ -16,6 +19,21 @@ const categoryIcons: Record<string, string> = {
 };
 
 export default function Home() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  // Group tools by category alphabetically, then by title
+  const sortedTools = [...toolsData].sort((a, b) => {
+    if (a.category !== b.category) {
+      return a.category.localeCompare(b.category);
+    }
+    return a.title.localeCompare(b.title);
+  });
+
+  // Filter tools based on selected category
+  const filteredTools = selectedCategory === "All"
+    ? sortedTools
+    : sortedTools.filter((t) => t.category === selectedCategory);
+
   return (
     <main className="noise-bg min-h-screen relative">
       {/* Background orbs */}
@@ -67,24 +85,28 @@ export default function Home() {
         </div>
 
         {/* Category Filter */}
-        <CategoryFilter categories={categories} />
+        <CategoryFilter
+          categories={categories}
+          selectedCategory={selectedCategory}
+          onSelect={setSelectedCategory}
+        />
 
         {/* Tools Grid */}
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           id="tools-grid"
         >
-          {toolsData.map((tool, i) => (
+          {filteredTools.map((tool, i) => (
             <Link
               key={tool.slug}
               href={`/tools/${tool.slug}`}
               className="card p-6 flex flex-col gap-3 group"
-              style={{ animationDelay: `${i * 60}ms` }}
+              style={{ animationDelay: `${i * 40}ms` }}
             >
               <div className="flex items-start justify-between">
                 <div
                   className="text-3xl animate-float"
-                  style={{ animationDelay: `${i * 0.3}s` }}
+                  style={{ animationDelay: `${i * 0.2}s` }}
                 >
                   {tool.icon}
                 </div>
@@ -139,13 +161,23 @@ export default function Home() {
   );
 }
 
-function CategoryFilter({ categories }: { categories: string[] }) {
+interface FilterProps {
+  categories: string[];
+  selectedCategory: string;
+  onSelect: (cat: string) => void;
+}
+
+function CategoryFilter({ categories, selectedCategory, onSelect }: FilterProps) {
   return (
     <div className="flex flex-wrap gap-2 justify-center mb-10">
       {categories.map((cat) => (
-        <span key={cat} className="tag">
+        <button
+          key={cat}
+          className={`tag ${selectedCategory === cat ? "active" : ""}`}
+          onClick={() => onSelect(cat)}
+        >
           {categoryIcons[cat] || "📌"} {cat}
-        </span>
+        </button>
       ))}
     </div>
   );
