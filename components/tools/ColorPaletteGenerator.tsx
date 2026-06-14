@@ -47,10 +47,10 @@ export default function ColorPaletteGenerator() {
   const [copied, setCopied] = useState<string | null>(null);
 
   const generate = useCallback(() => {
-    const hue = type === "random" ? Math.floor(Math.random() * 360) : baseHue;
-    if (type === "random") setBaseHue(hue);
-    setPalette(generatePalette(hue, type));
-  }, [type, baseHue]);
+    const newHue = Math.floor(Math.random() * 360);
+    setBaseHue(newHue);
+    setPalette(generatePalette(newHue, type));
+  }, [type]);
 
   const copy = async (text: string) => {
     await navigator.clipboard.writeText(text);

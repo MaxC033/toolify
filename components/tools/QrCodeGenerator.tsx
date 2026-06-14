@@ -31,7 +31,7 @@ export default function QrCodeGenerator() {
       document.body.removeChild(a);
       URL.revokeObjectURL(blobUrl);
     } catch (e) {
-      alert("Error downloading QR Code");
+      window.open(qrUrl, "_blank");
     }
   };
 
