@@ -1,6 +1,7 @@
 "use client";
 
 import type { AffiliateLink } from "@/data/affiliates";
+import { BrandLogo } from "@/components/BrandLogo";
 
 interface Props {
   links: AffiliateLink[];
@@ -36,7 +37,14 @@ export function AffiliateSection({ links, toolTitle }: Props) {
             id={`affiliate-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
           >
             {/* Icon */}
-            <span className="text-2xl flex-shrink-0">{link.logo}</span>
+            <span className="text-2xl flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-[var(--surface-3)] border border-[var(--border)] overflow-hidden p-1.5 group-hover:border-[var(--accent)] transition-colors">
+              <BrandLogo
+                url={link.href}
+                fallbackEmoji={link.logo || "🔗"}
+                alt={link.label}
+                size="sm"
+              />
+            </span>
 
             {/* Content */}
             <div className="flex-1 min-w-0">

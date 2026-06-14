@@ -82,7 +82,7 @@ export async function GET(request: Request) {
               letterSpacing: "0.05em",
             }}
           >
-            toolify.vercel.app
+            toolify-eight-gilt.vercel.app
           </span>
         </div>
 

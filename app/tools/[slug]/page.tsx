@@ -9,7 +9,7 @@ import { AffiliateSection } from "@/components/AffiliateSection";
 import { AdSenseBanner } from "@/components/AdSenseBanner";
 import type { Tool } from "@/types/tool";
 
-const SITE_URL = process.env.SITE_URL || "https://toolify.vercel.app";
+const SITE_URL = process.env.SITE_URL || "https://toolify-eight-gilt.vercel.app";
 
 interface Props {
   params: Promise<{ slug: string }>;

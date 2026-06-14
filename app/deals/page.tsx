@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export const metadata: Metadata = {
   title: "Exclusive Deals & Recommended Resources",
@@ -222,8 +223,13 @@ export default function DealsPage() {
                     className="card p-5 flex items-start gap-4 group no-underline text-left"
                     id={`deal-card-${deal.name.toLowerCase().replace(/\s+/g, "-")}`}
                   >
-                    <span className="text-3xl flex-shrink-0 bg-[var(--surface-2)] p-2.5 rounded-xl border border-[var(--border)] group-hover:border-[var(--accent)] transition-all">
-                      {deal.logo}
+                    <span className="text-3xl flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[var(--surface-2)] rounded-xl border border-[var(--border)] group-hover:border-[var(--accent)] transition-all overflow-hidden p-2">
+                      <BrandLogo
+                        url={deal.link}
+                        fallbackEmoji={deal.logo}
+                        alt={deal.name}
+                        size="md"
+                      />
                     </span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap mb-1">

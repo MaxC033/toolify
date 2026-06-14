@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toolify.vercel.app",
+    url: "https://toolify-eight-gilt.vercel.app",
     siteName: "Toolify",
     title: "Toolify — Free Online Tools",
     description:

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import toolsData from "@/data/tools.json";
+import { BrandLogo } from "@/components/BrandLogo";
 
 const categoryOrder = ["Productivity", "Design", "Writing", "Developer", "Security"];
 
@@ -173,7 +174,14 @@ export default function Home() {
                 className="card p-4 flex items-start gap-3 group no-underline text-left"
                 id="home-deal-grammarly"
               >
-                <span className="text-2xl">✏️</span>
+                <span className="text-2xl flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--surface-3)] border border-[var(--border)] overflow-hidden p-1.5 group-hover:border-[var(--accent)] transition-colors">
+                  <BrandLogo
+                    url="https://grammarly.com"
+                    fallbackEmoji="✏️"
+                    alt="Grammarly"
+                    size="sm"
+                  />
+                </span>
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Grammarly</span>
@@ -190,7 +198,14 @@ export default function Home() {
                 className="card p-4 flex items-start gap-3 group no-underline text-left"
                 id="home-deal-supabase"
               >
-                <span className="text-2xl">🗄️</span>
+                <span className="text-2xl flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--surface-3)] border border-[var(--border)] overflow-hidden p-1.5 group-hover:border-[var(--accent)] transition-colors">
+                  <BrandLogo
+                    url="https://supabase.com"
+                    fallbackEmoji="🗄️"
+                    alt="Supabase"
+                    size="sm"
+                  />
+                </span>
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Supabase</span>
@@ -207,7 +222,14 @@ export default function Home() {
                 className="card p-4 flex items-start gap-3 group no-underline text-left sm:col-span-2 md:col-span-1"
                 id="home-deal-hostinger"
               >
-                <span className="text-2xl">🌐</span>
+                <span className="text-2xl flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--surface-3)] border border-[var(--border)] overflow-hidden p-1.5 group-hover:border-[var(--accent)] transition-colors">
+                  <BrandLogo
+                    url="https://hostinger.com"
+                    fallbackEmoji="🌐"
+                    alt="Hostinger"
+                    size="sm"
+                  />
+                </span>
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Hostinger</span>
