@@ -51,6 +51,12 @@ export default function Home() {
         </Link>
         <div className="flex items-center gap-4 text-sm">
           <Link
+            href="/deals"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium"
+          >
+            Deals
+          </Link>
+          <Link
             href="/about"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
           >
@@ -138,15 +144,88 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-20 text-center">
-          <div className="glass rounded-2xl p-10 inline-block max-w-xl w-full">
+        {/* Bottom CTA & Partner Deals */}
+        <div className="mt-20 flex flex-col gap-12 items-center">
+          <div className="glass rounded-2xl p-10 text-center max-w-xl w-full">
             <div className="text-4xl mb-4">🚀</div>
             <h3 className="text-2xl font-bold mb-2">More Tools Coming</h3>
             <p className="text-[var(--text-secondary)] text-sm">
               We add new tools regularly. All tools are free, fast, and work
               entirely in your browser.
             </p>
+          </div>
+
+          {/* Workflow Boosters (Deals Preview) */}
+          <div className="w-full max-w-4xl animate-fade-up">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-px flex-1 bg-[var(--border)]" />
+              <span className="text-xs text-[var(--text-muted)] uppercase tracking-widest px-2">
+                Workflow Boosters
+              </span>
+              <div className="h-px flex-1 bg-[var(--border)]" />
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <a
+                href="https://grammarly.com"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="card p-4 flex items-start gap-3 group no-underline text-left"
+                id="home-deal-grammarly"
+              >
+                <span className="text-2xl">✏️</span>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Grammarly</span>
+                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-[rgba(124,110,255,0.15)] text-[var(--accent)] border border-[rgba(124,110,255,0.3)]">Free Plan</span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">AI writing assistant for grammar, tone, and clarity.</p>
+                </div>
+              </a>
+
+              <a
+                href="https://supabase.com"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="card p-4 flex items-start gap-3 group no-underline text-left"
+                id="home-deal-supabase"
+              >
+                <span className="text-2xl">🗄️</span>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Supabase</span>
+                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-[rgba(124,110,255,0.15)] text-[var(--accent)] border border-[rgba(124,110,255,0.3)]">Free Tier</span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">Open-source Firebase alternative with full Postgres database.</p>
+                </div>
+              </a>
+
+              <a
+                href="https://hostinger.com"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="card p-4 flex items-start gap-3 group no-underline text-left sm:col-span-2 md:col-span-1"
+                id="home-deal-hostinger"
+              >
+                <span className="text-2xl">🌐</span>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">Hostinger</span>
+                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-[rgba(124,110,255,0.15)] text-[var(--accent)] border border-[rgba(124,110,255,0.3)]">70% Off</span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">High-speed SSD hosting optimized for fast web deployment.</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="text-center mt-6">
+              <Link
+                href="/deals"
+                className="text-xs text-[var(--accent)] hover:underline font-medium"
+              >
+                View all curated deals & recommendations →
+              </Link>
+            </div>
           </div>
         </div>
       </div>

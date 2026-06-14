@@ -95,6 +95,9 @@ export default async function ToolPage({ params }: Props) {
       {/* Tool */}
       <ToolUI slug={tool.slug} />
 
+      {/* Affiliate recommendations */}
+      <AffiliateSection links={toolAffiliates} toolTitle={tool.title} />
+
       {/* Mid-page ad (between tool and FAQ) */}
       <AdSenseBanner
         slot="1234567890"
@@ -104,9 +107,6 @@ export default async function ToolPage({ params }: Props) {
 
       {/* FAQ */}
       <FAQ items={tool.faqItems} />
-
-      {/* Affiliate recommendations */}
-      <AffiliateSection links={toolAffiliates} toolTitle={tool.title} />
 
       {/* Bottom ad */}
       <AdSenseBanner

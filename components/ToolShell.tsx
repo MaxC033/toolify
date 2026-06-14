@@ -15,17 +15,41 @@ export function ToolShell({ tool, children }: Props) {
       <div className="orb orb-2" />
 
       {/* Nav */}
-      <nav className="glass sticky top-0 z-50 px-6 py-4 flex items-center gap-4">
-        <Link
-          href="/"
-          className="text-xl font-bold gradient-text tracking-tight"
-        >
-          ⚡ Toolify
-        </Link>
-        <span className="text-[var(--border)]">·</span>
-        <span className="text-sm text-[var(--text-secondary)]">
-          {tool.title}
-        </span>
+      <nav className="glass sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <Link
+            href="/"
+            className="text-xl font-bold gradient-text tracking-tight"
+          >
+            ⚡ Toolify
+          </Link>
+          <span className="text-[var(--border)] hidden sm:inline">·</span>
+          <span className="text-sm text-[var(--text-secondary)] hidden sm:inline">
+            {tool.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-4 text-sm">
+          <Link
+            href="/deals"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium"
+          >
+            Deals
+          </Link>
+          <Link
+            href="/about"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+          >
+            About
+          </Link>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary py-1.5 px-3 text-xs hidden sm:inline-block"
+          >
+            GitHub ↗
+          </a>
+        </div>
       </nav>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-12">
