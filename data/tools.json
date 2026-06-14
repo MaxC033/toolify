@@ -228,5 +228,465 @@
         "answer": "Yes. You can add unlimited color stops to create complex multi-color gradients."
       }
     ]
+  },
+  {
+    "slug": "url-encoder",
+    "title": "URL Encoder / Decoder",
+    "description": "Encode and decode URLs instantly. Convert special characters into % hex sequences or restore them back to plain text.",
+    "shortDescription": "Encode and decode URL parameter strings.",
+    "category": "Developer",
+    "keywords": ["url encoder", "url decoder", "url encode", "url decode online", "url parameters escape"],
+    "icon": "🛠️",
+    "faqItems": [
+      {
+        "question": "Why do we need to encode URLs?",
+        "answer": "URLs can only contain ASCII characters. Special characters, spaces, and non-ASCII symbols must be encoded to prevent link corruption."
+      },
+      {
+        "question": "What is percent-encoding?",
+        "answer": "Percent-encoding replaces unsafe characters with a '%' symbol followed by their two-digit hexadecimal representation."
+      },
+      {
+        "question": "Is URL encoding secure?",
+        "answer": "No. It is a standard data format conversion, not encryption. Anyone can decode it."
+      }
+    ]
+  },
+  {
+    "slug": "case-converter",
+    "title": "Case Converter",
+    "description": "Convert text between UPPERCASE, lowercase, Title Case, Sentence case, camelCase, and slug-case instantly.",
+    "shortDescription": "Transform text between different case styles.",
+    "category": "Writing",
+    "keywords": ["case converter", "upper to lower case", "title case generator", "text case changer", "camelcase online"],
+    "icon": "🔠",
+    "faqItems": [
+      {
+        "question": "What is Title Case?",
+        "answer": "Title Case capitalizes the first letter of each major word, commonly used for headings and titles."
+      },
+      {
+        "question": "What is camelCase?",
+        "answer": "camelCase removes spaces and capitalizes every word except the first one, commonly used in programming."
+      },
+      {
+        "question": "Does it support paragraph text?",
+        "answer": "Yes. You can paste large paragraphs, and the Sentence Case will correctly capitalize the first word of each sentence."
+      }
+    ]
+  },
+  {
+    "slug": "lorem-ipsum",
+    "title": "Lorem Ipsum Generator",
+    "description": "Generate custom dummy placeholder text for your UI designs, mockups, and layout templates.",
+    "shortDescription": "Generate placeholder dummy text instantly.",
+    "category": "Writing",
+    "keywords": ["lorem ipsum generator", "placeholder text", "dummy text generator", "lipsum maker", "dummy text for designers"],
+    "icon": "📝",
+    "faqItems": [
+      {
+        "question": "What is Lorem Ipsum?",
+        "answer": "It is a standard placeholder text used in printing and typesetting industries since the 1500s to demonstrate visual layouts."
+      },
+      {
+        "question": "Can I control the generated length?",
+        "answer": "Yes. You can generate custom numbers of paragraphs, sentences, or words, and choose whether to start with 'Lorem ipsum dolor sit amet'."
+      },
+      {
+        "question": "Is the generated text actual Latin?",
+        "answer": "No, it is a scrambled version of a Cicero passage, structured to mimic normal English word distributions."
+      }
+    ]
+  },
+  {
+    "slug": "html-entities",
+    "title": "HTML Entities Encoder / Decoder",
+    "description": "Convert special characters into HTML entities (e.g. &lt; or &#60;) to display HTML code safely as text in browsers.",
+    "shortDescription": "Encode or decode HTML entity tags safely.",
+    "category": "Developer",
+    "keywords": ["html entities encoder", "html entities decoder", "html escape", "html unescape", "html entity translator"],
+    "icon": "🌐",
+    "faqItems": [
+      {
+        "question": "What is HTML escaping?",
+        "answer": "HTML escaping replaces special characters like '<' or '&' with safe entity names to prevent the browser from rendering them as code."
+      },
+      {
+        "question": "What is the difference between named and numeric entities?",
+        "answer": "Named entities use readable names (like &amp;), while numeric entities use character codes (like &#38;). Both render identically."
+      },
+      {
+        "question": "Does this protect against XSS?",
+        "answer": "Yes. Escaping user input before rendering it in HTML is a primary defense against Cross-Site Scripting (XSS) attacks."
+      }
+    ]
+  },
+  {
+    "slug": "hash-generator",
+    "title": "Hash Generator",
+    "description": "Generate cryptographic MD5, SHA-1, and SHA-256 hashes from any text input directly in your browser.",
+    "shortDescription": "Create secure MD5, SHA-1, or SHA-256 hashes.",
+    "category": "Security",
+    "keywords": ["hash generator", "md5 generator", "sha256 generator online", "text hash creator", "sha1 online creator"],
+    "icon": "🔒",
+    "faqItems": [
+      {
+        "question": "What is a cryptographic hash?",
+        "answer": "A hash is a fixed-size string generated from input text. The same input always yields the same hash, but you cannot reconstruct the input from the hash."
+      },
+      {
+        "question": "Is MD5 still secure?",
+        "answer": "No. MD5 is vulnerable to collision attacks. It should only be used for integrity checks or legacy purposes, not for securing passwords."
+      },
+      {
+        "question": "Does my text go to your servers?",
+        "answer": "No. All hashes are calculated locally using the browser's Web Crypto API or JS library, protecting your data."
+      }
+    ]
+  },
+  {
+    "slug": "epoch-converter",
+    "title": "Epoch Time Converter",
+    "description": "Convert Unix epoch timestamps to human-readable dates and convert GMT/Local dates back to epoch values.",
+    "shortDescription": "Convert Unix timestamps to readable dates.",
+    "category": "Developer",
+    "keywords": ["epoch converter", "timestamp converter", "Unix time converter", "human readable date", "seconds to date converter"],
+    "icon": "⏱️",
+    "faqItems": [
+      {
+        "question": "What is Unix Epoch time?",
+        "answer": "Unix time is the number of seconds (or milliseconds) elapsed since January 1, 1970 (UTC), excluding leap seconds."
+      },
+      {
+        "question": "How do I convert milliseconds instead of seconds?",
+        "answer": "The tool automatically detects whether you pasted a 10-digit number (seconds) or a 13-digit number (milliseconds) and parses accordingly."
+      },
+      {
+        "question": "What timezones are supported?",
+        "answer": "The converter displays dates in both Coordinated Universal Time (UTC/GMT) and your local system timezone."
+      }
+    ]
+  },
+  {
+    "slug": "diff-checker",
+    "title": "Text Diff Checker",
+    "description": "Compare two text documents side-by-side to highlight additions, deletions, and inline modifications instantly.",
+    "shortDescription": "Compare text differences side-by-side.",
+    "category": "Developer",
+    "keywords": ["diff checker", "compare text online", "text difference finder", "text comparison tool", "code difference checker"],
+    "icon": "🔍",
+    "faqItems": [
+      {
+        "question": "How are changes highlighted?",
+        "answer": "Red highlights represent deleted text or lines, and green highlights represent added lines or character changes."
+      },
+      {
+        "question": "Is there a limit on text size?",
+        "answer": "The diffing engine is lightweight, meaning it can compare small snippets up to entire source files of several thousand lines."
+      },
+      {
+        "question": "Are my files uploaded?",
+        "answer": "No. The text diff algorithm runs entirely in-memory inside your browser, ensuring absolute code privacy."
+      }
+    ]
+  },
+  {
+    "slug": "user-agent-parser",
+    "title": "User Agent Parser",
+    "description": "Parse any browser user agent string to identify details about the browser version, operating system, layout engine, and device vendor.",
+    "shortDescription": "Analyze and decode user agent strings.",
+    "category": "Developer",
+    "keywords": ["user agent parser", "ua parser online", "browser detector", "detect user agent", "parse user agent string"],
+    "icon": "💻",
+    "faqItems": [
+      {
+        "question": "What is a User Agent?",
+        "answer": "A user agent is a header string that browsers send to servers, identifying the client browser type, version, OS, and rendering engine."
+      },
+      {
+        "question": "Can I test my own browser's user agent?",
+        "answer": "Yes. The tool automatically detects your current browser's user agent and pre-populates it on page load."
+      },
+      {
+        "question": "Why is a user agent string so messy?",
+        "answer": "For historical compatibility. Modern browsers include 'Mozilla/5.0' and reference layout engines like 'AppleWebKit' to prevent old sites from blocking them."
+      }
+    ]
+  },
+  {
+    "slug": "text-to-slug",
+    "title": "Text to Slug Generator",
+    "description": "Convert article titles, headings, and names into clean, URL-friendly lowercase slugs by stripping punctuation and replacing spaces with dashes.",
+    "shortDescription": "Generate clean, SEO-friendly URL slugs.",
+    "category": "Developer",
+    "keywords": ["text to slug", "slug generator", "url slug creator", "title to slug maker", "clean url builder"],
+    "icon": "🔗",
+    "faqItems": [
+      {
+        "question": "What is a URL slug?",
+        "answer": "A slug is the human-readable part of a URL that describes the page contents, typically consisting of lowercase letters, numbers, and dashes."
+      },
+      {
+        "question": "Does this strip emojis and symbols?",
+        "answer": "Yes. The tool automatically removes symbols, brackets, question marks, and other characters that are invalid or unreadable in URLs."
+      },
+      {
+        "question": "Is it customizable?",
+        "answer": "Yes, you can choose whether to preserve numbers, keep specific separators, or toggle lowercase enforcement."
+      }
+    ]
+  },
+  {
+    "slug": "sql-formatter",
+    "title": "SQL Formatter",
+    "description": "Format, beautify, and auto-indent SQL scripts, SELECT queries, updates, and DDL scripts for readability.",
+    "shortDescription": "Beautify and format SQL scripts instantly.",
+    "category": "Developer",
+    "keywords": ["sql formatter", "format sql query online", "sql beautifier", "pretty print sql", "sql code cleaner"],
+    "icon": "🗄️",
+    "faqItems": [
+      {
+        "question": "Which SQL dialects are supported?",
+        "answer": "The formatter outputs standard ANSI SQL, which is highly readable and compatible with MySQL, PostgreSQL, MS SQL, Oracle, and SQLite."
+      },
+      {
+        "question": "Will formatting break my query syntax?",
+        "answer": "No. The formatter only adjusts whitespace, line breaks, and indentation; it never modifies keyword spelling or identifiers."
+      },
+      {
+        "question": "Does it format nested queries?",
+        "answer": "Yes. Subqueries and complex joins are correctly indented with hierarchical levels to improve readability."
+      }
+    ]
+  },
+  {
+    "slug": "css-minifier",
+    "title": "CSS Minifier",
+    "description": "Compress CSS scripts by removing comments, redundant spaces, and line breaks to optimize load speeds.",
+    "shortDescription": "Compress CSS stylesheets for production.",
+    "category": "Design",
+    "keywords": ["css minifier", "compress css online", "css compressor", "css code shrinker", "optimize css size"],
+    "icon": "⚡",
+    "faqItems": [
+      {
+        "question": "What is CSS minification?",
+        "answer": "Minification removes unnecessary characters (like comments, extra spaces, and newlines) from CSS without changing its visual output, reducing file size."
+      },
+      {
+        "question": "Does it support modern CSS variables?",
+        "answer": "Yes. Custom properties, variables, media queries, and utility layouts are fully supported without truncation."
+      },
+      {
+        "question": "How much file size can I save?",
+        "answer": "Uncompressed CSS files typically shrink by 20% to 50% depending on the amount of comments and spacing in the original stylesheet."
+      }
+    ]
+  },
+  {
+    "slug": "js-minifier",
+    "title": "JavaScript Minifier",
+    "description": "Minify JavaScript scripts by stripping comments, logging statements, and collapsing spaces for production builds.",
+    "shortDescription": "Minify and compress JavaScript scripts.",
+    "category": "Developer",
+    "keywords": ["js minifier", "javascript minifier", "compress js code", "javascript compressor", "minify js online"],
+    "icon": "🚀",
+    "faqItems": [
+      {
+        "question": "How does this minifier work?",
+        "answer": "It removes whitespaces, removes comments, and optimizes code blocks. This results in smaller payloads and faster browser parsing."
+      },
+      {
+        "question": "Will my JS code execute the same way?",
+        "answer": "Yes. Only non-functional formatting elements are stripped. The logic, scopes, and variable bindings remain identical."
+      },
+      {
+        "question": "Is it safe to run in my browser?",
+        "answer": "Absolutely. Minification is completed locally inside the sandbox of your browser tab."
+      }
+    ]
+  },
+  {
+    "slug": "hex-to-rgb",
+    "title": "Color Code Converter",
+    "description": "Convert colors instantly between Hex (#ffffff), RGB (255,255,255), and HSL (0, 0%, 100%) color models.",
+    "shortDescription": "Convert between Hex, RGB, and HSL formats.",
+    "category": "Design",
+    "keywords": ["hex to rgb", "rgb to hex", "color code converter", "hex to hsl online", "hsl to hex converter"],
+    "icon": "🎨",
+    "faqItems": [
+      {
+        "question": "What color formats are supported?",
+        "answer": "Hex (including 3-digit shorthand), RGB/RGBA, and HSL/HSLA color models."
+      },
+      {
+        "question": "Does it support opacity channels?",
+        "answer": "Yes. Converting Hex with alpha channels (e.g. #ffffff80) yields corresponding RGBA and HSLA opacity outputs."
+      },
+      {
+        "question": "Is there a live visual preview?",
+        "answer": "Yes. The tool features a live color box that updates instantly as you change values."
+      }
+    ]
+  },
+  {
+    "slug": "binary-converter",
+    "title": "Binary Converter",
+    "description": "Convert normal text to binary code sequences (e.g. 01000001) and translate binary back to ASCII text.",
+    "shortDescription": "Translate text to binary and vice versa.",
+    "category": "Developer",
+    "keywords": ["binary converter", "text to binary", "binary to text", "binary translator", "binary code decoder"],
+    "icon": "🔢",
+    "faqItems": [
+      {
+        "question": "How does text translate to binary?",
+        "answer": "Each character is mapped to its ASCII or Unicode numeric code point, which is then represented as an 8-bit binary number."
+      },
+      {
+        "question": "Can I format binary output?",
+        "answer": "Yes. You can choose whether to separate binary bytes with spaces or keep them concatenated in a single string."
+      },
+      {
+        "question": "Does it support non-English characters?",
+        "answer": "Yes, it supports UTF-8 characters, meaning foreign scripts, emojis, and symbols are translated correctly."
+      }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "title": "Regex Tester",
+    "description": "Validate regular expressions and test strings with real-time match highlighting, capturing groups, and expression flags.",
+    "shortDescription": "Test regular expressions in real-time.",
+    "category": "Developer",
+    "keywords": ["regex tester", "regular expression tester online", "regex validator", "regex checker", "javascript regex match"],
+    "icon": "🧪",
+    "faqItems": [
+      {
+        "question": "Which Regex flavor is used?",
+        "answer": "This tool uses the browser's native JavaScript Regular Expressions engine, supporting standard flags like g, i, m, and u."
+      },
+      {
+        "question": "What is highlighted in the test string?",
+        "answer": "Matching substrings are highlighted in real-time. If you define capturing groups, their captures are displayed separately."
+      },
+      {
+        "question": "Does it detect infinite loops?",
+        "answer": "The tester includes standard safeguards to prevent freezing your browser in case of catastrophic backtracking."
+      }
+    ]
+  },
+  {
+    "slug": "qr-code-generator",
+    "title": "QR Code Generator",
+    "description": "Create custom high-resolution QR codes for websites, plain text, WiFi passwords, or contact info instantly.",
+    "shortDescription": "Create custom QR codes instantly.",
+    "category": "Design",
+    "keywords": ["qr-code generator", "free qr code maker", "create qr code online", "qr code creator", "custom qr codes"],
+    "icon": "📱",
+    "faqItems": [
+      {
+        "question": "What data can be stored in a QR code?",
+        "answer": "URLs, text, contact details, SMS templates, or email fields. For URLs, scanning will automatically open the browser."
+      },
+      {
+        "question": "Can I adjust the QR code resolution?",
+        "answer": "Yes. The generated QR code renders on a scalable canvas, allowing you to download high-resolution PNG images."
+      },
+      {
+        "question": "How secure is this generator?",
+        "answer": "The QR code generates locally using a client-side javascript library. Your URLs and text are never sent to external servers."
+      }
+    ]
+  },
+  {
+    "slug": "json-to-yaml",
+    "title": "JSON to YAML Converter",
+    "description": "Convert JSON arrays and nested structures into clean, readable, space-indented YAML format instantly.",
+    "shortDescription": "Convert JSON structures to YAML format.",
+    "category": "Developer",
+    "keywords": ["json to yaml", "json to yaml converter online", "convert json to yaml", "json to yml", "parse json to yaml"],
+    "icon": "🔄",
+    "faqItems": [
+      {
+        "question": "Why convert JSON to YAML?",
+        "answer": "YAML is more human-readable than JSON because it uses indentation rather than brackets and quotes, making it ideal for configuration files."
+      },
+      {
+        "question": "Does it format nested objects?",
+        "answer": "Yes. Nested objects, key-value pairs, and arrays are converted to clean, hierarchical yaml format."
+      },
+      {
+        "question": "Is it safe to paste credentials?",
+        "answer": "Yes. Like all our developer tools, conversions happen locally inside your browser session."
+      }
+    ]
+  },
+  {
+    "slug": "yaml-to-json",
+    "title": "YAML to JSON Converter",
+    "description": "Convert YAML config files into standard JSON format, validating syntax and highlighting indentation errors.",
+    "shortDescription": "Convert YAML config files to JSON.",
+    "category": "Developer",
+    "keywords": ["yaml to json", "yaml to json converter", "convert yaml to json online", "yml to json converter"],
+    "icon": "🔄",
+    "faqItems": [
+      {
+        "question": "What are common use cases for YAML to JSON?",
+        "answer": "Converting Kubernetes configs, CI/CD pipeline definitions, or cloud configs (like AWS CloudFormation) to inspect them in JSON-consuming systems."
+      },
+      {
+        "question": "What happens if my YAML has syntax errors?",
+        "answer": "The parser highlights indentation, naming, and key duplication errors, helping you fix the YAML layout."
+      },
+      {
+        "question": "Does it support anchor/alias references?",
+        "answer": "Yes. Standard YAML references (& and *) are resolved during translation to represent valid duplicated JSON nodes."
+      }
+    ]
+  },
+  {
+    "slug": "xml-to-json",
+    "title": "XML to JSON Converter",
+    "description": "Convert structured XML tags, nested nodes, and attributes into standard JSON arrays and objects instantly.",
+    "shortDescription": "Convert XML schemas to JSON documents.",
+    "category": "Developer",
+    "keywords": ["xml to json", "xml to json converter online", "convert xml to json", "parse xml to json"],
+    "icon": "🔄",
+    "faqItems": [
+      {
+        "question": "How are XML attributes represented in JSON?",
+        "answer": "XML attributes are typically mapped as prefix key properties (e.g. '@attributeName') inside the parsed JSON object node."
+      },
+      {
+        "question": "Does it support CDATA blocks?",
+        "answer": "Yes. Text sections wrapped in CDATA elements are preserved as plain string properties in the output JSON."
+      },
+      {
+        "question": "Is my XML schema validated?",
+        "answer": "Yes, the parser checks if tags are properly nested and closed, showing errors for malformed XML schemas."
+      }
+    ]
+  },
+  {
+    "slug": "image-meta-extractor",
+    "title": "Image Metadata Extractor",
+    "description": "Inspect image properties including MIME format, dimensions, size, color space, and embedded EXIF metadata.",
+    "shortDescription": "View image EXIF metadata online.",
+    "category": "Design",
+    "keywords": ["image metadata extractor", "view image exif data", "image inspector online", "image tag reader", "exif metadata parser"],
+    "icon": "📷",
+    "faqItems": [
+      {
+        "question": "What is EXIF metadata?",
+        "answer": "EXIF is a standard metadata format embedded in image files, containing camera settings, date taken, device model, and GPS coordinate fields."
+      },
+      {
+        "question": "Does my image upload to a server?",
+        "answer": "No. The tool reads file headers locally using client-side JavaScript APIs, protecting your photo privacy."
+      },
+      {
+        "question": "Which image formats are supported?",
+        "answer": "PNG, JPEG, WebP, GIF, and SVG files can be inspected."
+      }
+    ]
   }
 ]
