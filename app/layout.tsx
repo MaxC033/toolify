@@ -81,6 +81,11 @@ export default function RootLayout({
       <head>
         <meta name="impact-site-verification" {...{ value: "219b6ef4-1213-458d-a5e8-4aae931cad1b" }} />
         <meta name="impact-site-verification" content="219b6ef4-1213-458d-a5e8-4aae931cad1b" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7409939-791a-4326-a670-41a3d4e367e51.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');`
+          }}
+        />
         {/* Google Analytics 4 */}
         {GA_ID && (
           <>
