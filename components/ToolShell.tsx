@@ -30,10 +30,10 @@ export function ToolShell({ tool, children }: Props) {
         </div>
         <div className="flex items-center gap-4 text-sm">
           <Link
-            href="/deals"
+            href="/resources"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium"
           >
-            Deals
+            Resources
           </Link>
           <Link
             href="/about"

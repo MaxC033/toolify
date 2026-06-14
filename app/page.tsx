@@ -52,10 +52,10 @@ export default function Home() {
         </Link>
         <div className="flex items-center gap-4 text-sm">
           <Link
-            href="/deals"
+            href="/resources"
             className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors font-medium"
           >
-            Deals
+            Resources
           </Link>
           <Link
             href="/about"
@@ -145,7 +145,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Bottom CTA & Partner Deals */}
+        {/* Bottom CTA & Recommended Resources */}
         <div className="mt-20 flex flex-col gap-12 items-center">
           <div className="glass rounded-2xl p-10 text-center max-w-xl w-full">
             <div className="text-4xl mb-4">🚀</div>
@@ -156,7 +156,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Workflow Boosters (Deals Preview) */}
+          {/* Recommended Resources Preview */}
           <div className="w-full max-w-4xl animate-fade-up">
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px flex-1 bg-[var(--border)]" />
@@ -242,10 +242,10 @@ export default function Home() {
 
             <div className="text-center mt-6">
               <Link
-                href="/deals"
+                href="/resources"
                 className="text-xs text-[var(--accent)] hover:underline font-medium"
               >
-                View all curated deals & recommendations →
+                View all recommended resources →
               </Link>
             </div>
           </div>

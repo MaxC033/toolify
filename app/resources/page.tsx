@@ -3,9 +3,9 @@ import Link from "next/link";
 import { BrandLogo } from "@/components/BrandLogo";
 
 export const metadata: Metadata = {
-  title: "Exclusive Deals & Recommended Resources",
+  title: "Recommended Resources",
   description:
-    "Boost your workflow with our hand-picked deals on top developer tools, design suites, writing assistants, web hosting, and security tools.",
+    "Boost your workflow with our hand-picked resources — top developer tools, design suites, writing assistants, web hosting, and security tools.",
 };
 
 const categories = [
@@ -187,13 +187,13 @@ export default function DealsPage() {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Workflow Boosters
+            Recommended
             <br />
-            <span className="gradient-text">& Curated Deals</span>
+            <span className="gradient-text">Resources</span>
           </h1>
           <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto leading-relaxed">
             Hand-picked recommendations of industry-standard tools, secure
-            hosting, and productivity packages. Save time and money with these curated recommendations.
+            hosting, and productivity packages to supercharge your workflow.
           </p>
         </div>
 
