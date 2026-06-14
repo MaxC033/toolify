@@ -4,10 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import toolsData from "@/data/tools.json";
 
-const categories = [
-  "All",
-  ...Array.from(new Set(toolsData.map((t) => t.category))),
-];
+const categoryOrder = ["Productivity", "Design", "Writing", "Developer", "Security"];
+
+const categories = ["All", ...categoryOrder];
 
 const categoryIcons: Record<string, string> = {
   All: "✦",
@@ -21,10 +20,12 @@ const categoryIcons: Record<string, string> = {
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Group tools by category alphabetically, then by title
+  // Group tools by custom category order, then by title
   const sortedTools = [...toolsData].sort((a, b) => {
-    if (a.category !== b.category) {
-      return a.category.localeCompare(b.category);
+    const indexA = categoryOrder.indexOf(a.category);
+    const indexB = categoryOrder.indexOf(b.category);
+    if (indexA !== indexB) {
+      return indexA - indexB;
     }
     return a.title.localeCompare(b.title);
   });
