@@ -258,6 +258,9 @@ export default function Home() {
           Built with ❤️ · All tools run in your browser · No data is ever sent
           to our servers
         </p>
+        <p className="text-[10px] opacity-10 mt-2 select-all">
+          Impact-Site-Verification: 62e4c7bf-9292-4b3d-b5c6-ded2ae411aaf
+        </p>
       </footer>
     </main>
   );
