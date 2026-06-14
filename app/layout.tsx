@@ -79,8 +79,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <meta name="impact-site-verification" {...{ value: "2066d416-a2e1-4c08-abf3-86b249b29ad4" }} />
-        <meta name="impact-site-verification" content="2066d416-a2e1-4c08-abf3-86b249b29ad4" />
+        <meta name="impact-site-verification" {...{ value: "219b6ef4-1213-458d-a5e8-4aae931cad1b" }} />
+        <meta name="impact-site-verification" content="219b6ef4-1213-458d-a5e8-4aae931cad1b" />
         {/* Google Analytics 4 */}
         {GA_ID && (
           <>
