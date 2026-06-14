@@ -259,7 +259,7 @@ export default function Home() {
           to our servers
         </p>
         <p className="text-[10px] opacity-10 mt-2 select-all">
-          Impact-Site-Verification: 62e4c7bf-9292-4b3d-b5c6-ded2ae411aaf
+          Impact-Site-Verification: 8bbbf0d6-7b17-49ba-bc9f-4fe09629ea57
         </p>
       </footer>
     </main>
