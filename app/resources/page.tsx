@@ -17,7 +17,6 @@ const categories = [
         name: "Grammarly",
         description:
           "AI-powered writing assistant that checks grammar, style, and tone in real-time.",
-        badge: "Free Plan Available",
         logo: "✍️",
         link: "https://grammarly.com",
       },
@@ -25,7 +24,6 @@ const categories = [
         name: "Todoist",
         description:
           "Organize your life and work. Clean, simple, and integrates with pomodoro timers.",
-        badge: "Free Plan Available",
         logo: "✅",
         link: "https://todoist.com",
       },
@@ -33,7 +31,6 @@ const categories = [
         name: "Notion",
         description:
           "The all-in-one workspace for your notes, tasks, wikis, and databases.",
-        badge: "Free for Individuals",
         logo: "📒",
         link: "https://notion.so",
       },
@@ -41,7 +38,6 @@ const categories = [
         name: "Obsidian",
         description:
           "A powerful knowledge base on top of a local folder of plain text Markdown files.",
-        badge: "100% Free",
         logo: "🔮",
         link: "https://obsidian.md",
       },
@@ -55,7 +51,6 @@ const categories = [
         name: "Canva",
         description:
           "Create beautiful social media posts, presentation decks, flyers, and graphic mockups.",
-        badge: "Free Plan Available",
         logo: "🖌️",
         link: "https://canva.com",
       },
@@ -63,7 +58,6 @@ const categories = [
         name: "Figma",
         description:
           "The leading collaborative interface design tool. Free forever for individuals.",
-        badge: "Free Tier",
         logo: "📐",
         link: "https://figma.com",
       },
@@ -77,7 +71,6 @@ const categories = [
         name: "Supabase",
         description:
           "An open-source Firebase alternative. Instant Postgres database, Auth, and APIs.",
-        badge: "Free Tier",
         logo: "⚡",
         link: "https://supabase.com",
       },
@@ -85,7 +78,6 @@ const categories = [
         name: "Postman",
         description:
           "The absolute industry standard for building, testing, and formatting REST APIs.",
-        badge: "Free Plan",
         logo: "📬",
         link: "https://postman.com",
       },
@@ -99,7 +91,6 @@ const categories = [
         name: "Hostinger",
         description:
           "Affordable shared web hosting with direct WordPress deployment and high-speed SSDs.",
-        badge: "Save 70%",
         logo: "🖥️",
         link: "https://hostinger.com",
       },
@@ -107,7 +98,6 @@ const categories = [
         name: "Vercel",
         description:
           "The best framework and hosting platform for Next.js, React, and frontend developer teams.",
-        badge: "Free Hobby Plan",
         logo: "▲",
         link: "https://vercel.com",
       },
@@ -121,7 +111,6 @@ const categories = [
         name: "Bitwarden",
         description:
           "Open-source password manager. Store, sync, and share credentials securely.",
-        badge: "Free Tier",
         logo: "🔐",
         link: "https://bitwarden.com",
       },
@@ -129,7 +118,6 @@ const categories = [
         name: "1Password",
         description:
           "Elegant, enterprise-grade password management for families, teams, and individuals.",
-        badge: "Free Trial",
         logo: "🔑",
         link: "https://1password.com",
       },
@@ -137,7 +125,6 @@ const categories = [
         name: "NordVPN",
         description:
           "Industry-leading VPN service protecting your online identity and internet connection.",
-        badge: "Save 60%",
         logo: "🛡️",
         link: "https://nordvpn.com",
       },
@@ -236,11 +223,6 @@ export default function DealsPage() {
                         <span className="font-semibold text-base text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
                           {deal.name}
                         </span>
-                        {deal.badge && (
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[rgba(124,110,255,0.15)] text-[var(--accent)] border border-[rgba(124,110,255,0.3)]">
-                            {deal.badge}
-                          </span>
-                        )}
                       </div>
                       <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                         {deal.description}
